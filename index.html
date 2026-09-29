@@ -13,10 +13,13 @@ h2{font-size:1.1rem;margin:36px 0 6px}
 p{margin:4px 0 8px}
 .wrap{overflow-x:auto}
 table{border-collapse:collapse;width:100%;font-size:.95rem}
-th,td{text-align:left;padding:4px 12px 4px 0;border-bottom:1px solid #ccc;white-space:nowrap;vertical-align:top}
+th,td{text-align:left;padding:4px 10px 4px 0;border-bottom:1px solid #ccc;white-space:nowrap;vertical-align:top}
 th{border-bottom:1px solid #000}
 td.n,th.n{text-align:right}
 tr.tier td{font-weight:bold;padding-top:12px}
+small{font-size:.8em}
+th{white-space:normal;vertical-align:bottom}
+@media (max-width:480px){table{font-size:.78rem}th,td{padding-right:5px}.tk{display:none}small{display:block}td{white-space:normal}}
 </style>
 </head>
 <body>
@@ -49,53 +52,54 @@ tr.tier td{font-weight:bold;padding-top:12px}
 <h2>Reliability ranking</h2>
 <p>Delivers means the actual result (production or cost) was at or better than the company's first guidance, with misses of up to 5% beyond the range counted as delivered. Best estimate, with an 80% confidence range; a wider range means less history.</p>
 <div class="wrap"><table>
-<tr><th>Company</th><th>Ticker</th><th class="n">Guided years</th><th class="n">Delivers (uncertainty range)</th></tr>
+<tr><th>Company</th><th class="tk">Ticker</th><th class="n">Guided years</th><th class="n">Delivers (uncertainty range)</th></tr>
 <tr class="tier"><td colspan="4">Top</td></tr>
-<tr><td>Alkane Resources</td><td>ALK</td><td class=n>21</td><td class=n>95% (88-99)</td></tr>
-<tr><td>Ramelius Resources</td><td>RMS</td><td class=n>25</td><td class=n>93% (86-98)</td></tr>
-<tr><td>Capricorn Metals</td><td>CMM</td><td class=n>9</td><td class=n>92% (80-98)</td></tr>
-<tr><td>West African Resources</td><td>WAF</td><td class=n>9</td><td class=n>92% (80-98)</td></tr>
-<tr><td>Genesis Minerals</td><td>GMD</td><td class=n>4</td><td class=n>89% (70-97)</td></tr>
-<tr><td>Catalyst Metals</td><td>CYL</td><td class=n>4</td><td class=n>88% (69-97)</td></tr>
-<tr><td>Evolution Mining</td><td>EVN</td><td class=n>55</td><td class=n>86% (77-92)</td></tr>
-<tr><td>Emerald Resources</td><td>EMR</td><td class=n>2</td><td class=n>86% (61-97)</td></tr>
-<tr><td>Regis Resources</td><td>RRL</td><td class=n>36</td><td class=n>86% (78-92)</td></tr>
-<tr><td>Greatland Resources</td><td>GGP</td><td class=n>2</td><td class=n>84% (61-96)</td></tr>
+<tr><td>Alkane Resources</td><td class="tk">ALK</td><td class=n>21</td><td class=n>95% (88-99)</td></tr>
+<tr><td>Ramelius Resources</td><td class="tk">RMS</td><td class=n>25</td><td class=n>93% (86-98)</td></tr>
+<tr><td>Capricorn Metals</td><td class="tk">CMM</td><td class=n>9</td><td class=n>92% (80-98)</td></tr>
+<tr><td>West African Resources</td><td class="tk">WAF</td><td class=n>9</td><td class=n>92% (80-98)</td></tr>
+<tr><td>Genesis Minerals</td><td class="tk">GMD</td><td class=n>4</td><td class=n>89% (70-97)</td></tr>
+<tr><td>Catalyst Metals</td><td class="tk">CYL</td><td class=n>4</td><td class=n>88% (69-97)</td></tr>
+<tr><td>Evolution Mining</td><td class="tk">EVN</td><td class=n>55</td><td class=n>86% (77-92)</td></tr>
+<tr><td>Emerald Resources</td><td class="tk">EMR</td><td class=n>2</td><td class=n>86% (61-97)</td></tr>
+<tr><td>Regis Resources</td><td class="tk">RRL</td><td class=n>36</td><td class=n>86% (78-92)</td></tr>
+<tr><td>Greatland Resources</td><td class="tk">GGP</td><td class=n>2</td><td class=n>84% (61-96)</td></tr>
 <tr class="tier"><td colspan="4">Middle</td></tr>
-<tr><td>Northern Star Resources</td><td>NST</td><td class=n>42</td><td class=n>77% (68-84)</td></tr>
-<tr><td>Vault Minerals</td><td>VAU</td><td class=n>23</td><td class=n>75% (62-85)</td></tr>
-<tr><td>Millennium Minerals</td><td>MOY</td><td class=n>6</td><td class=n>72% (50-88)</td></tr>
-<tr><td>Gascoyne Resources</td><td>GCY</td><td class=n>5</td><td class=n>67% (42-85)</td></tr>
-<tr><td>Bellevue Gold</td><td>BGL</td><td class=n>4</td><td class=n>63% (36-83)</td></tr>
-<tr><td>Perseus Mining</td><td>PRU</td><td class=n>12</td><td class=n>63% (45-78)</td></tr>
-<tr><td>Pantoro Gold</td><td>PNR</td><td class=n>1</td><td class=n>58% (21-86)</td></tr>
+<tr><td>Northern Star Resources</td><td class="tk">NST</td><td class=n>42</td><td class=n>77% (68-84)</td></tr>
+<tr><td>Vault Minerals</td><td class="tk">VAU</td><td class=n>23</td><td class=n>75% (62-85)</td></tr>
+<tr><td>Millennium Minerals</td><td class="tk">MOY</td><td class=n>6</td><td class=n>72% (50-88)</td></tr>
+<tr><td>Gascoyne Resources</td><td class="tk">GCY</td><td class=n>5</td><td class=n>67% (42-85)</td></tr>
+<tr><td>Bellevue Gold</td><td class="tk">BGL</td><td class=n>4</td><td class=n>63% (36-83)</td></tr>
+<tr><td>Perseus Mining</td><td class="tk">PRU</td><td class=n>12</td><td class=n>63% (45-78)</td></tr>
+<tr><td>Pantoro Gold</td><td class="tk">PNR</td><td class=n>1</td><td class=n>58% (21-86)</td></tr>
 <tr class="tier"><td colspan="4">Bottom</td></tr>
-<tr><td>Resolute Mining</td><td>RSG</td><td class=n>16</td><td class=n>49% (33-63)</td></tr>
-<tr><td>Westgold Resources</td><td>WGX</td><td class=n>16</td><td class=n>49% (34-66)</td></tr>
-<tr><td>Dacian Gold</td><td>DCN</td><td class=n>6</td><td class=n>46% (24-70)</td></tr>
-<tr><td>Ora Banda Mining</td><td>OBM</td><td class=n>9</td><td class=n>43% (25-62)</td></tr>
-<tr><td>Blackham / Wiluna Mining</td><td>WMC</td><td class=n>4</td><td class=n>30% (9-60)</td></tr>
+<tr><td>Resolute Mining</td><td class="tk">RSG</td><td class=n>16</td><td class=n>49% (33-63)</td></tr>
+<tr><td>Westgold Resources</td><td class="tk">WGX</td><td class=n>16</td><td class=n>49% (34-66)</td></tr>
+<tr><td>Dacian Gold</td><td class="tk">DCN</td><td class=n>6</td><td class=n>46% (24-70)</td></tr>
+<tr><td>Ora Banda Mining</td><td class="tk">OBM</td><td class=n>9</td><td class=n>43% (25-62)</td></tr>
+<tr><td>Blackham / Wiluna Mining</td><td class="tk">WMC</td><td class=n>4</td><td class=n>30% (9-60)</td></tr>
 
 </table></div>
 
 <h2>FY27 guidance</h2>
+<p>Delivers shows the best estimate with the uncertainty range in brackets.</p>
 <div class="wrap"><table>
-<tr><th>Company</th><th class="n">Production (oz)</th><th class="n">Delivers (uncertainty range)</th><th class="n">AISC per oz</th><th class="n">Delivers (uncertainty range)</th></tr>
-<tr><td>Alkane Resources</td><td class=n>163,000-177,000</td><td class=n>95% (90-99)</td><td class=n>2,900-3,200 A$</td><td class=n>94% (87-99)</td></tr>
-<tr><td>Ramelius Resources</td><td class=n>205,000-225,000</td><td class=n>94% (88-98)</td><td class=n>2,150-2,350 A$</td><td class=n>91% (84-97)</td></tr>
-<tr><td>Capricorn Metals</td><td class=n>137,000-147,000</td><td class=n>92% (82-98)</td><td class=n>1,900-2,100 A$</td><td class=n>89% (77-98)</td></tr>
-<tr><td>Genesis Minerals</td><td class=n>270,000-300,000</td><td class=n>88% (73-98)</td><td class=n>2,750-3,050 A$</td><td class=n>84% (67-97)</td></tr>
-<tr><td>Regis Resources</td><td class=n>360,000-400,000</td><td class=n>87% (80-93)</td><td class=n>2,990-3,390 A$</td><td class=n>83% (74-91)</td></tr>
-<tr><td>Evolution Mining</td><td class=n>660,000-730,000</td><td class=n>87% (79-93)</td><td class=n>1,795-1,995 A$</td><td class=n>83% (73-91)</td></tr>
-<tr><td>Emerald Resources</td><td class=n>100,000-115,000</td><td class=n>84% (66-98)</td><td class=n>980-1,080 US$</td><td class=n>81% (58-97)</td></tr>
-<tr><td>Greatland Resources</td><td class=n>260,000-300,000</td><td class=n>83% (64-97)</td><td class=n>2,900-3,330 A$</td><td class=n>79% (57-96)</td></tr>
-<tr><td>Northern Star Resources</td><td class=n>1,500,000-1,650,000</td><td class=n>79% (70-87)</td><td class=n>3,050-3,450 A$</td><td class=n>74% (64-83)</td></tr>
-<tr><td>Vault Minerals</td><td class=n>355,000-375,000</td><td class=n>77% (66-87)</td><td class=n>3,150-3,350 A$</td><td class=n>72% (58-83)</td></tr>
-<tr><td>Perseus Mining</td><td class=n>420,000-480,000</td><td class=n>66% (48-81)</td><td class=n>1,835-2,070 US$</td><td class=n>59% (41-76)</td></tr>
-<tr><td>Bellevue Gold</td><td class=n>150,000-170,000</td><td class=n>64% (39-85)</td><td class=n>2,800-3,100 A$</td><td class=n>58% (32-81)</td></tr>
-<tr><td>Pantoro Gold</td><td class=n>90,000-105,000</td><td class=n>58% (23-87)</td><td class=n>2,800-3,400 A$</td><td class=n>52% (17-84)</td></tr>
-<tr><td>Westgold Resources</td><td class=n>385,000-425,000</td><td class=n>53% (36-70)</td><td class=n>2,980-3,380 A$</td><td class=n>45% (29-62)</td></tr>
-<tr><td>Ora Banda Mining</td><td class=n>125,000-140,000</td><td class=n>46% (27-66)</td><td class=n>3,400-3,600 A$</td><td class=n>40% (21-59)</td></tr>
+<tr><th>Company</th><th class="n">Production</th><th class="n">Delivers</th><th class="n">AISC/oz</th><th class="n">Delivers</th></tr>
+<tr><td>Alkane</td><td class=n>163-177koz</td><td class=n>95% <small>(90-99)</small></td><td class=n>A$2,900-3,200</td><td class=n>94% <small>(87-99)</small></td></tr>
+<tr><td>Ramelius</td><td class=n>205-225koz</td><td class=n>94% <small>(88-98)</small></td><td class=n>A$2,150-2,350</td><td class=n>91% <small>(84-97)</small></td></tr>
+<tr><td>Capricorn</td><td class=n>137-147koz</td><td class=n>92% <small>(82-98)</small></td><td class=n>A$1,900-2,100</td><td class=n>89% <small>(77-98)</small></td></tr>
+<tr><td>Genesis</td><td class=n>270-300koz</td><td class=n>88% <small>(73-98)</small></td><td class=n>A$2,750-3,050</td><td class=n>84% <small>(67-97)</small></td></tr>
+<tr><td>Regis</td><td class=n>360-400koz</td><td class=n>87% <small>(80-93)</small></td><td class=n>A$2,990-3,390</td><td class=n>83% <small>(74-91)</small></td></tr>
+<tr><td>Evolution</td><td class=n>660-730koz</td><td class=n>87% <small>(79-93)</small></td><td class=n>A$1,795-1,995</td><td class=n>83% <small>(73-91)</small></td></tr>
+<tr><td>Emerald</td><td class=n>100-115koz</td><td class=n>84% <small>(66-98)</small></td><td class=n>US$980-1,080</td><td class=n>81% <small>(58-97)</small></td></tr>
+<tr><td>Greatland</td><td class=n>260-300koz</td><td class=n>83% <small>(64-97)</small></td><td class=n>A$2,900-3,330</td><td class=n>79% <small>(57-96)</small></td></tr>
+<tr><td>Northern Star</td><td class=n>1,500-1,650koz</td><td class=n>79% <small>(70-87)</small></td><td class=n>A$3,050-3,450</td><td class=n>74% <small>(64-83)</small></td></tr>
+<tr><td>Vault</td><td class=n>355-375koz</td><td class=n>77% <small>(66-87)</small></td><td class=n>A$3,150-3,350</td><td class=n>72% <small>(58-83)</small></td></tr>
+<tr><td>Perseus</td><td class=n>420-480koz</td><td class=n>66% <small>(48-81)</small></td><td class=n>US$1,835-2,070</td><td class=n>59% <small>(41-76)</small></td></tr>
+<tr><td>Bellevue</td><td class=n>150-170koz</td><td class=n>64% <small>(39-85)</small></td><td class=n>A$2,800-3,100</td><td class=n>58% <small>(32-81)</small></td></tr>
+<tr><td>Pantoro</td><td class=n>90-105koz</td><td class=n>58% <small>(23-87)</small></td><td class=n>A$2,800-3,400</td><td class=n>52% <small>(17-84)</small></td></tr>
+<tr><td>Westgold</td><td class=n>385-425koz</td><td class=n>53% <small>(36-70)</small></td><td class=n>A$2,980-3,380</td><td class=n>45% <small>(29-62)</small></td></tr>
+<tr><td>Ora Banda</td><td class=n>125-140koz</td><td class=n>46% <small>(27-66)</small></td><td class=n>A$3,400-3,600</td><td class=n>40% <small>(21-59)</small></td></tr>
 </table></div>
 
 
